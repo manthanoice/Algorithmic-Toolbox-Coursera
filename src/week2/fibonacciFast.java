@@ -3,10 +3,10 @@ package week2;
 import java.util.Scanner;
 
 public class fibonacciFast {
-    static long fibonacci(int n){
+    static double fibonacci(int n){
         if(n<=1)
             return n;
-        long[] arr = new long[n+1];
+        double[] arr = new double[n+1];
         arr[0]=0;
         arr[1]=1;
         for(int i=2; i<n+1; i++)
