@@ -6,7 +6,7 @@ public class fibonacciFast {
     static long fibonacci(int n){
         if(n<=1)
             return n;
-        int[] arr = new int[n+1];
+        long[] arr = new long[n+1];
         arr[0]=0;
         arr[1]=1;
         for(int i=2; i<n+1; i++)
