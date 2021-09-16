@@ -1,7 +1,6 @@
 package week3;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class celebrationParty {
     static int childrenAge(float []arr) {
