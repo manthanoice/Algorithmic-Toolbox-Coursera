@@ -2,7 +2,7 @@ package week4;
 
 import java.util.Scanner;
 
-public class insertionSort {
+public class selectionSort {
     static void sort(int[] arr){
         int n = arr.length;
         for(int i=0; i<n; i++){
