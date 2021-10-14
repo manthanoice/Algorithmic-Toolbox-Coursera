@@ -9,11 +9,8 @@ public class countingSort {
         int []count = new int[n+1];
         for(int i=0; i<n+1; i++)
             count[i] = 0;
-        for(int i=0; i<n; i++){
-            int x = count[arr[i]];
-            x++;
-            count[arr[i]]=x;
-        }
+        for(int i=0; i<n; i++)
+            count[arr[i]]++;
         for(int i=1; i<n+1; i++)
             count[i]+=count[i-1];
         for(int i=n-1; i>=0; i--){
