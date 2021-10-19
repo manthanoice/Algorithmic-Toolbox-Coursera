@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class fibonacciAgain {
     static long pisanoPattern(long m) {
         long a = 0;
-        long b = 1;
+        long b = 1; //check
         long c;
         long count = 0;
         for (int i = 0; i<m*m; i++) {
