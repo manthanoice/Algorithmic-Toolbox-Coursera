@@ -9,12 +9,10 @@ public class changeCoinDp {
         count[0] = 0;
         for(int i=1; i<=money; i++)
             count[i] = Integer.MAX_VALUE;
-        for(int i=0; i<=money; i++){
-            for(int j=0; j<d.length; j++){
-                if(i-d[j]>=0)
-                    count[i] = Math.min(count[i],count[i-d[j]]+1);
-            }
-        }
+        for(int i=0; i<=money; i++)
+            for (int k : d)
+                if (i - k >= 0)
+                    count[i] = Math.min(count[i], count[i - k] + 1);
         return count[money];
     }
     public static void main(String[] args) {
